@@ -1,0 +1,227 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AddVouchers" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1105,2141" sap2010:WorkflowViewState.IdRef="AddVouchers_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="51">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AddVouchers" sap:VirtualizedContainerService.HintSize="634,2076" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of String)]" Name="listData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Read data input" sap:VirtualizedContainerService.HintSize="592,508" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="inputFilePath" />
+        <Variable x:TypeArguments="x:String" Name="dataInput" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:SelectFile DisplayName="Select input file" Filter="Text|*.txt" sap:VirtualizedContainerService.HintSize="338,147" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[inputFilePath]" />
+      <ui:ReadTextFile File="{x:Null}" Content="[dataInput]" DisplayName="Read file" FileName="[inputFilePath]" sap:VirtualizedContainerService.HintSize="338,89" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <Assign DisplayName="Split by newline" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:List(x:String)">[listData]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:List(x:String)">[dataInput.Split(Environment.NewLine.ToCharArray,StringSplitOptions.RemoveEmptyEntries).ToList]</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website" sap:VirtualizedContainerService.HintSize="592,1438" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="863859e8-65fc-4851-b097-a6c2bd483917" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,1212" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL - add voucher link" sap:VirtualizedContainerService.HintSize="516,91" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://shopee.vn/user/voucher-wallet" Version="V3" />
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item in arrData" sap:VirtualizedContainerService.HintSize="516,989" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listData]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="voucher" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="480,854" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,762" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,525" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DisplayName="Type Into 'Mã Voucher'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="863859e8-65fc-4851-b097-a6c2bd483917" Text="[voucher]" Timeout="5" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://shopee.vn/user/voucher-wallet" DesignTimeRectangle="866, 328, 386, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'def'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' parentid='main' placeholder='Nhập mã voucher tại đây' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' parentid='main' placeholder='Nhập mã voucher tại đây' class='' aaname='' /&gt;" Guid="8b0c3b99-c037-4e21-b50d-b4d01142f65a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYYAAAAWCAYAAADEkTsSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHdSURBVHhe7dxBTsJAFMZxz9KLGThLw1EgHAESXUiCCSa40IVbMGxw41YSGPmqU6avI3YBQ2j+JL9QpzNdvo/XmXjjvjYOAACPYAAAVBAMAIAKggEAWuhz/eHeXl7d48PE3Y/HBV1rTPdiazyCAQBaRsX/bjQ6SnNia4VgAIAWeZ49RYMgRnNjz2gUDPM8c1k+i96rm7letp8vt323js4BAJxak07BinUOpw+GaU4gAEBi2jewRX86mTQas3sO8WBY9l3X/+rPctezwaDiX97PXG/6M74edKLjAIDzst2CAmC73br3xaIc07XGbDjYrqEeDL+hUBZ1HwI+GIq/czevzO+44TKYT8cAAEnpxFFY7EVBsNvtiu/w2s7T2vBZtWAofvWbwn54lbRyw9t6J1CsCYODYACApHQc1RZ88YGgTywURGvDZ9WCIbafcCj8wcayRTAAwMX8Fwx/dQtykmA4undAMABAchd/ldQdrMp7NQQDACR33s1n2xWo0NtXReFmsw0LggEAkkt7XHVf5Ifm9VLRVfj7e5UOgmAAgIuwXUMTtluQeDAAAK5Ssn+JAQC4Hk06h1in4BEMANBC2jdQ8deJIx1HFV1rzO4pWAQDAKCCYAAAVBAMAIDAxn0Dxdj5cf8C3TwAAAAASUVORK5CYII=" InformativeScreenshot="0961a86829f36eec2ebcf08bc0f2b706.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="752, 327, 85, 19" ElementType="Text" FriendlyName="'Mã Voucher'" FullSelectorArgument="&lt;webctrl class='GX+M+P' parentid='main' tag='DIV' /&gt;" FuzzyAccuracy="0.9" FuzzySelectorArgument="&lt;webctrl class='GX+M+P' parentid='main' tag='DIV' type='' aaname='Mã Voucher' check:innerText='Mã Voucher' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAXCAYAAABgWeOzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJPSURBVGhD7ZTBrYMwDIbfKCyH1GUQg9A96BiVGIJjHk7sYDsORLSklxz+QxvH9v/Z4W9dV9d0rxrkCmqQK6hBrqAGuYIE5OXZu67rXP9cRJDQa/Qx44v9955cv/3Xdb2b3pjnMbmF39Oxw5yeRc1uPI35oryn0c3W2RdkQO5d/1AQo9C8gjwPNBj7XAviaSDWOQ37KMdXVR/y6EaAYGwRnPfD6DfxIwD4GuwXs7hpG3L2JdyhX0CezaJgftu+V3juEjKC2f6POnzqByDxc8IHEDZ/l6wdXo/Zj+hhf2VBzB/5xeHbdUAqh+rf8xumnQXWtyFbjYN5SIoQ9jPDkAFKK9RKPxl7D/CbhqeB8PoFkI1+RB2Cy6CFwbK6BJj51DEhZ+o7AxkTsIRw5i9ryP63hmVtklZoWjak7nnz6SB8bxHIOWTvy3o1JKuO8imGEiU92DEHkOUFSIZNaMhceOa3AnQI2dgWtaW5piWUM8gFA/f5VB3hM5+DL6Pv1xhmFrLYUGiCLieQsQGACio1BlK55Ibmm74CWT9hoVLI5FHrMmTWHJiPTWrIwjCpELKIk08PJPthElB+u8lcFyDTZm3fYg5RQTYTY8w55E1k0DJqDtD+JstNDf9Rff1CEp1CzuUI8Kn2JcihuEpubjLfJJy6vpcVAgElQ6FcaU9JPVbLA+H5sGcxCD7AAsh6cCDN6xpka0uS4nQPjWF8MKoazyjcTzeWFKF5WXFsULy+GJqMEXmKIIN0DnmnCHLTPWqQK6hBrqAGuYIa5ApqkG/X6v4BukOHcr0K4f8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NClick ClickType="Single" DelayAfter="2" DisplayName="Click 'Lưu'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="863859e8-65fc-4851-b097-a6c2bd483917" Timeout="5" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://shopee.vn/user/voucher-wallet" DesignTimeRectangle="1274, 315, 100, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Lưu'" FullSelectorArgument="&lt;webctrl aaname='Lưu' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Lưu' tag='BUTTON' type='' class='ZZd8ua' check:innerText='Lưu' /&gt;" Guid="bc09c00d-0ac9-4e64-9b25-2e9d5279c891" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAwCAYAAAD9wT87AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF1SURBVHhe7dwxboMwGIbhXqg3aI/QC7RXyhEydK3UjJ04QdbsmYyQulAJBRspKH/9Qw2FMNEif0GfpVcitsPAI0eZuHPOCcONQOB1QMXHm3y9PEr+dM8ipgZqMQCy1hIHKLVQkw6oLMvJjSxeakIg4AgEHoHAIxB4BAKPQOARCDwCgUcg8AgEHoHAIxB4BAKPQODdDJA9FCJmN7m25ggE3kqAdlKLSJ30c83+015scvQrR6n8XGX85e97bPdykULO2/57aK0fyF9XhkCLNx/Ir3VQBFqsWUDNaE+PzhFoweafoH6OQAtGoJsG2sj5JHI5bH4+t2BjoOYe4588Av1P7cOdGAGtOQ1heAT9ez0CCpBh1IlCEoj9IQKBRyDwCAQegcAjEHgEAo9A4BEIPAKBRyDwCAQegcAjEHgEAu8a6PlhciOLkLe4Avp8fyUSQt5ALQZA+tqRPM8lyzJJ01SMMSxC+uzVQC0Gr4IJSKrG4hdwnHPyDbP1ucXa7048AAAAAElFTkSuQmCC" InformativeScreenshot="c210f8f2967ba0c61ddd1812d4dcefa0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website' /&gt;" SearchSteps="Selector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAzxJREFUWEe9Vl2ITVEUHkKJ4sEDSSkepM4+d5wGk2JKojj73DHdQn6iKJOHeRAvyg0PiFBeRKE8ECYpefHkiadJPCj5e0HUOefOLyaOb+1Z19n33jXXmZk7vvrqtNa397f22j/3No0HSaEwI9S5zXGgDhPpm2KcnlxE2t0X+epb6DuJTYpRjmWTg0irc2w2DN4Du5j0PWxy0LC8sShptWnEwPkCruXwX1CMcqQhLYcbg6TQOjPynbfg75KvVnO4BpQjDbrwjsZweOKItbOf23uTQ6MCmhukpTEcmjjQ2m6aNPTdLRwaFXQjeKu6OTRxhFq9okkHtnoLODQqSGOKxRgOZYMx0SqWSPvKk4r5GlIHaIyUG2FtcQgOGpP/QjXAtilwj7/K4saTrivbpsDpfS+J6xFt/o7Jfkm5esSYN2ybAm15KYlrqJ0+FFuM896SpFicmhTbptF3qN1DiPeIY6pIOrZNgTPwTBJXUg3EeccjY7x22/D2X4bxGUy4Jym0zU6SZAq+H8hjU0LzlG1T4Aw8kcQ2MbBotIIJtiPEHJeoyOqcwEfG1EaWykuBWtUXNC+XcmOidu6wbQocjFui2GKvzq0ZLLgLy7984yUWe41tU6CqK5LYJu05aemdpxsgabIQBVwwpjbQgfOS2Ca9blGgdht9PrcYB/csCv8kaesRCzlpTG2ggBOSWKa6TbeBxtGNoB+pbLdohOjgEWNqg4KSuB7Ryh6chy50Yy4VEvvOUcR+StoKanWQbVOEgeoUxZmo+sv/B1HAcVljUbs7jakN2ltRPAbGOrfB/GP2naHqnE10LM+2KeK86pDEYyFWf5HmwvfH6pxNeK03pjZKgbtREldQq8f13oAocPcmB7zptCVSvsxS3l3JtinokZHEZcL4udF1eMvw/bDqHRgKA+c0HcQsW0mvqTG1gX3JSWKbML7au92bR3raa1pJb3tza1jw5lAMRez41+qJg0HLItJXoKRXLJXE1cR78QN7fZeuEh26qL15Ha0asfuSXiJdW7ZN0V9omS+JJ4P0H4JtU2S5Pg3iZ7asBU7xdWFAQxn76hTb1SLZpWbRXcb+vsaB+9BQaucFeKyy/U1NfwDIiGWwXJXQnwAAAABJRU5ErkJggg==" InformativeScreenshot="9e796f3ef68fa172a474bfb0595f4ab0.jpg" Selector="&lt;html app='chrome.exe' title='*Shopee*' /&gt;" Url="https://shopee.vn/user/voucher-wallet" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

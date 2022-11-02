@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AddVouchers" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1105,2141" sap2010:WorkflowViewState.IdRef="AddVouchers_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AddVouchers" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="836,2384.8" sap2010:WorkflowViewState.IdRef="AddVouchers_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="40">
       <x:String>System.Activities</x:String>
@@ -97,7 +97,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AddVouchers" sap:VirtualizedContainerService.HintSize="634,2076" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AddVouchers" sap:VirtualizedContainerService.HintSize="635.2,2320" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of String)]" Name="listData" />
     </Sequence.Variables>
@@ -106,7 +106,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Read data input" sap:VirtualizedContainerService.HintSize="592,508" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Sequence DisplayName="Read data input" sap:VirtualizedContainerService.HintSize="592,512" sap2010:WorkflowViewState.IdRef="Sequence_10">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="inputFilePath" />
         <Variable x:TypeArguments="x:String" Name="dataInput" />
@@ -116,9 +116,9 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SelectFile DisplayName="Select input file" Filter="Text|*.txt" sap:VirtualizedContainerService.HintSize="338,147" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[inputFilePath]" />
-      <ui:ReadTextFile File="{x:Null}" Content="[dataInput]" DisplayName="Read file" FileName="[inputFilePath]" sap:VirtualizedContainerService.HintSize="338,89" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-      <Assign DisplayName="Split by newline" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <ui:SelectFile DisplayName="Select input file" Filter="Text|*.txt" sap:VirtualizedContainerService.HintSize="337.6,148.8" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[inputFilePath]" />
+      <ui:ReadTextFile File="{x:Null}" Content="[dataInput]" DisplayName="Read file" FileName="[inputFilePath]" sap:VirtualizedContainerService.HintSize="337.6,90.4" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <Assign DisplayName="Split by newline" sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="scg:List(x:String)">[listData]</OutArgument>
         </Assign.To>
@@ -127,32 +127,32 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website" sap:VirtualizedContainerService.HintSize="592,1438" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="863859e8-65fc-4851-b097-a6c2bd483917" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website" sap:VirtualizedContainerService.HintSize="592,1676.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="863859e8-65fc-4851-b097-a6c2bd483917" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,1212" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558.4,1450.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGoToUrl DisplayName="Go To URL - add voucher link" sap:VirtualizedContainerService.HintSize="516,91" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://shopee.vn/user/voucher-wallet" Version="V3" />
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item in arrData" sap:VirtualizedContainerService.HintSize="516,989" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listData]">
+            <uix:NGoToUrl DisplayName="Go To URL - add voucher link" sap:VirtualizedContainerService.HintSize="515.2,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://shopee.vn/user/voucher-wallet" Version="V3" />
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item in arrData" sap:VirtualizedContainerService.HintSize="515.2,1225.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[listData]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="voucher" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="480,854" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="480,1089.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,762" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,996.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,13 +160,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <TryCatch.Try>
-                        <Sequence sap:VirtualizedContainerService.HintSize="400,525" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,756" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DisplayName="Type Into 'Mã Voucher'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="863859e8-65fc-4851-b097-a6c2bd483917" Text="[voucher]" Timeout="5" Version="V3">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Mã Voucher'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,228" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="863859e8-65fc-4851-b097-a6c2bd483917" Text="[voucher]" Timeout="5" Version="V3">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="https://shopee.vn/user/voucher-wallet" DesignTimeRectangle="866, 328, 386, 18" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'def'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' parentid='main' placeholder='Nhập mã voucher tại đây' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' parentid='main' placeholder='Nhập mã voucher tại đây' class='' aaname='' /&gt;" Guid="8b0c3b99-c037-4e21-b50d-b4d01142f65a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYYAAAAWCAYAAADEkTsSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHdSURBVHhe7dxBTsJAFMZxz9KLGThLw1EgHAESXUiCCSa40IVbMGxw41YSGPmqU6avI3YBQ2j+JL9QpzNdvo/XmXjjvjYOAACPYAAAVBAMAIAKggEAWuhz/eHeXl7d48PE3Y/HBV1rTPdiazyCAQBaRsX/bjQ6SnNia4VgAIAWeZ49RYMgRnNjz2gUDPM8c1k+i96rm7letp8vt323js4BAJxak07BinUOpw+GaU4gAEBi2jewRX86mTQas3sO8WBY9l3X/+rPctezwaDiX97PXG/6M74edKLjAIDzst2CAmC73br3xaIc07XGbDjYrqEeDL+hUBZ1HwI+GIq/czevzO+44TKYT8cAAEnpxFFY7EVBsNvtiu/w2s7T2vBZtWAofvWbwn54lbRyw9t6J1CsCYODYACApHQc1RZ88YGgTywURGvDZ9WCIbafcCj8wcayRTAAwMX8Fwx/dQtykmA4undAMABAchd/ldQdrMp7NQQDACR33s1n2xWo0NtXReFmsw0LggEAkkt7XHVf5Ifm9VLRVfj7e5UOgmAAgIuwXUMTtluQeDAAAK5Ssn+JAQC4Hk06h1in4BEMANBC2jdQ8deJIx1HFV1rzO4pWAQDAKCCYAAAVBAMAIDAxn0Dxdj5cf8C3TwAAAAASUVORK5CYII=" InformativeScreenshot="0961a86829f36eec2ebcf08bc0f2b706.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -177,15 +177,16 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NClick ClickType="Single" DelayAfter="2" DisplayName="Click 'Lưu'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="863859e8-65fc-4851-b097-a6c2bd483917" Timeout="5" Version="V3">
+                          <uix:NClick ClickType="Single" DelayAfter="2" DisplayName="Click 'Lưu'" sap:VirtualizedContainerService.HintSize="356.8,167.2" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="863859e8-65fc-4851-b097-a6c2bd483917" Timeout="5" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://shopee.vn/user/voucher-wallet" DesignTimeRectangle="1274, 315, 100, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Lưu'" FullSelectorArgument="&lt;webctrl aaname='Lưu' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Lưu' tag='BUTTON' type='' class='ZZd8ua' check:innerText='Lưu' /&gt;" Guid="bc09c00d-0ac9-4e64-9b25-2e9d5279c891" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAwCAYAAAD9wT87AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF1SURBVHhe7dwxboMwGIbhXqg3aI/QC7RXyhEydK3UjJ04QdbsmYyQulAJBRspKH/9Qw2FMNEif0GfpVcitsPAI0eZuHPOCcONQOB1QMXHm3y9PEr+dM8ipgZqMQCy1hIHKLVQkw6oLMvJjSxeakIg4AgEHoHAIxB4BAKPQOARCDwCgUcg8AgEHoHAIxB4BAKPQODdDJA9FCJmN7m25ggE3kqAdlKLSJ30c83+015scvQrR6n8XGX85e97bPdykULO2/57aK0fyF9XhkCLNx/Ir3VQBFqsWUDNaE+PzhFoweafoH6OQAtGoJsG2sj5JHI5bH4+t2BjoOYe4588Av1P7cOdGAGtOQ1heAT9ez0CCpBh1IlCEoj9IQKBRyDwCAQegcAjEHgEAo9A4BEIPAKBRyDwCAQegcAjEHgEAu8a6PlhciOLkLe4Avp8fyUSQt5ALQZA+tqRPM8lyzJJ01SMMSxC+uzVQC0Gr4IJSKrG4hdwnHPyDbP1ucXa7048AAAAAElFTkSuQmCC" InformativeScreenshot="c210f8f2967ba0c61ddd1812d4dcefa0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website' /&gt;" SearchSteps="Selector, Image" Version="V1" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="356.8,188" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="SameAsCard" Shortcuts="[d(hk)][k(home)][u(hk)]" Version="V3" />
                         </Sequence>
                       </TryCatch.Try>
                       <TryCatch.Catches>
-                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
